@@ -1,0 +1,53 @@
+[
+  {
+    "mode": "chat",
+    "effort": "quick",
+    "first_text_seconds": 1.697,
+    "total_seconds": 3.048,
+    "answer": "18 divided by 20 is 90%. (Calculation: (18 ÷ 20) × 100 = 90%)",
+    "usage": {
+      "prompt_eval_count": 154,
+      "eval_count": 36,
+      "done_reason": "stop",
+      "total_duration": 2681509400,
+      "load_duration": 2297400,
+      "prompt_eval_duration": 597167000,
+      "eval_duration": 1350694000
+    },
+    "error": null
+  },
+  {
+    "mode": "hyper",
+    "effort": "quick",
+    "first_text_seconds": 0.456,
+    "total_seconds": 0.746,
+    "answer": "18 divided by 20 is 90%.",
+    "usage": {
+      "prompt_eval_count": 146,
+      "eval_count": 13,
+      "done_reason": "stop",
+      "total_duration": 480278300,
+      "load_duration": 3401800,
+      "prompt_eval_duration": 143305000,
+      "eval_duration": 289959000
+    },
+    "error": null
+  },
+  {
+    "mode": "work",
+    "effort": "quick",
+    "first_text_seconds": 0.4,
+    "total_seconds": 0.676,
+    "answer": "18 divided by 20 is 90%.",
+    "usage": {
+      "prompt_eval_count": 143,
+      "eval_count": 13,
+      "done_reason": "stop",
+      "total_duration": 407283300,
+      "load_duration": 4681600,
+      "prompt_eval_duration": 87951000,
+      "eval_duration": 274244000
+    },
+    "error": null
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "status": "Original demonstration content. Not teacher reviewed. No board alignment verified.",
+  "title": "Force and Laws of Motion — Samjha demonstration notes",
+  "edition": null,
+  "permission": "Original project demonstration content",
+  "concept_checklists": {
+    "inertia": [
+      "An object resists a change in its state of rest or uniform straight-line motion.",
+      "An unbalanced external force changes velocity.",
+      "Mass is a measure of inertia."
+    ],
+    "newton_second_law": [
+      "Net force equals rate of change of momentum.",
+      "For constant mass F = ma.",
+      "Force is a vector; its SI unit is the newton."
+    ],
+    "newton_third_law": [
+      "Interaction forces have equal magnitude and opposite direction.",
+      "The forces act on different objects, so they do not cancel on a single object."
+    ]
+  }
+}

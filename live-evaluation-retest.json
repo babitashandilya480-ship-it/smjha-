@@ -1,0 +1,30 @@
+{
+  "notice": "Real model output. Expected answers are unreviewed original authoring; no quality score claimed.",
+  "results": [
+    {
+      "id": "multistep",
+      "error": "invalid_output",
+      "message": "The model returned incomplete feedback. Nothing was saved. Try again.",
+      "schema_valid": false
+    },
+    {
+      "id": "hinglish",
+      "latency_seconds": 5.75,
+      "feedback": {
+        "samjho": "Action-reaction pairs (Newton's 3rd law) are equal and opposite but act on different objects. So, they don't cancel. For example, when you push a wall, the wall pushes back with equal force. Your motion depends on net force (unbalanced forces), not the reaction pair. Formula: F = ma (Newton's 2nd law). Practice: If a 10 kg object accelerates at 2 m/s², what's the net force?",
+        "answer_likho": "Action-reaction pairs (Newton's 3rd law) are equal and opposite but act on different objects. So, they don:cancel. For example, when you push a wall, the wall pushes back with equal force. Your motion depends on net force (unbalanced forces), not the reaction pair. Formula: F = ma (Newton's 2nd law). Practice: If a 10 kg object accelerates at 2 m/s², what's the net force?",
+        "correct": "",
+        "correction": "",
+        "why": "",
+        "hint": "",
+        "practice": "When you push a wall, which object experiences the reaction force?",
+        "category": "Formula",
+        "verdict": "unassessed",
+        "affected_step": "",
+        "source_ids": []
+      },
+      "expected_for_human_review": "They act on different objects, so do not cancel on one body.",
+      "schema_valid": true
+    }
+  ]
+}

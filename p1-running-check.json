@@ -1,0 +1,17 @@
+{
+  "http://127.0.0.1:5173/chat": {
+    "status": 200
+  },
+  "http://127.0.0.1:8000/api/v1/auth/me": {
+    "status": 401
+  },
+  "http://127.0.0.1:8000/api/health": {
+    "status": 200,
+    "health": {
+      "available": true,
+      "model": "qwen3:4b",
+      "status": "ready",
+      "instructions": ""
+    }
+  }
+}

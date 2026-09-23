@@ -1,0 +1,9 @@
+
+  VITE v8.3.0  ready in 151 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+4:07:15 pm [vite] (client) hmr update /src/Chat.tsx
+4:08:31 pm [vite] (client) hmr update /src/Chat.tsx
+4:09:57 pm [vite] (client) page reload src/main.tsx
+4:09:57 pm [vite] (client) hmr update /src/WorkspaceNavigation.tsx
+4:09:57 pm [vite] (client) hmr update /src/Chat.tsx

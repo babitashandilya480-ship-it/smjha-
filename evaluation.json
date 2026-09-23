@@ -1,0 +1,66 @@
+{
+  "status": "Original evaluation expectations, not teacher reviewed. Human review required.",
+  "prompt_design_examples": [
+    {
+      "question": "A 2 kg object accelerates at 3 m/s². Find force.",
+      "answer": "6 J",
+      "expected": "Correct magnitude, incorrect unit; 6 N."
+    }
+  ],
+  "held_out": [
+    {
+      "id": "concept",
+      "task": "doubt",
+      "question": "Why does a passenger move forward when a bus suddenly stops?",
+      "expected": "Inertia: body tends to continue moving while the bus slows."
+    },
+    {
+      "id": "formula",
+      "task": "check",
+      "question": "A 4 kg object accelerates at 2.5 m/s². Find the net force.",
+      "answer": "F = ma = 10 N",
+      "expected": "Correct."
+    },
+    {
+      "id": "units",
+      "task": "check",
+      "question": "A 3 kg object accelerates at 4 m/s². Find force.",
+      "answer": "12 J",
+      "expected": "Magnitude correct; force unit must be N."
+    },
+    {
+      "id": "misconception",
+      "task": "check",
+      "question": "Do action and reaction cancel each other on the same object?",
+      "answer": "Yes, so objects cannot accelerate.",
+      "expected": "Incorrect. They act on different objects."
+    },
+    {
+      "id": "multistep",
+      "task": "check",
+      "question": "A 2 kg object changes velocity from 1 m/s to 7 m/s in 3 s. Find the constant net force.",
+      "answer": "a = (7-1)/3 = 2 m/s²; F = 2*2 = 4 N",
+      "expected": "Correct."
+    },
+    {
+      "id": "hindi",
+      "task": "doubt",
+      "language": "Hindi",
+      "question": "जड़त्व क्या है? एक सरल उदाहरण दें।",
+      "expected": "Hindi explanation of resistance to change of rest/uniform motion."
+    },
+    {
+      "id": "hinglish",
+      "task": "doubt",
+      "language": "Hinglish",
+      "question": "Action reaction equal hain toh motion kaise hota hai?",
+      "expected": "They act on different objects, so do not cancel on one body."
+    },
+    {
+      "id": "scope",
+      "task": "doubt",
+      "question": "Explain organic esterification in detail.",
+      "expected": "State limited scope and invite Force and Laws of Motion question."
+    }
+  ]
+}

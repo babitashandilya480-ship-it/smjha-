@@ -1,0 +1,157 @@
+{
+  "notice": "Real model output. Expected answers are unreviewed original authoring; no quality score claimed.",
+  "results": [
+    {
+      "id": "concept",
+      "latency_seconds": 12.42,
+      "feedback": {
+        "samjho": "When a bus stops suddenly, the passenger's body tends to continue moving forward due to inertia. Inertia is the property of matter that resists changes in motion. The bus stops, but the passenger's body keeps moving until a force (like the seatbelt) acts on them.",
+        "answer_likho": "Inertia: the tendency of an object to resist change in motion. Example: When a bus stops suddenly, passengers move forward because their bodies continue moving at the previous speed until a force stops them.",
+        "correct": "Yes",
+        "correction": "",
+        "why": "The student's answer is empty, so no correction needed. The explanation is correct based on Newton's first law of motion (inertia).",
+        "hint": "",
+        "practice": "If a bus moving at 30 km/h stops suddenly, how far does a passenger move forward before being stopped by the seatbelt? (Assume constant deceleration and no friction.)",
+        "category": "Formula",
+        "verdict": "unassessed",
+        "affected_step": "",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Inertia: body tends to continue moving while the bus slows.",
+      "schema_valid": true
+    },
+    {
+      "id": "formula",
+      "latency_seconds": 3.05,
+      "feedback": {
+        "samjho": "Force and Laws of Motion",
+        "answer_likho": "F = ma = 4 kg × 2.5 m/s² = 10 N",
+        "correct": "Yes",
+        "correction": "",
+        "why": "Calculation is correct: 4 × 2.5 = 10, units N (kg·m/s²) match",
+        "hint": "",
+        "practice": "Yes",
+        "category": "Concept",
+        "verdict": "correct",
+        "affected_step": "None",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Correct.",
+      "schema_valid": true
+    },
+    {
+      "id": "units",
+      "latency_seconds": 3.65,
+      "feedback": {
+        "samjho": "Force = mass × acceleration",
+        "answer_likho": "The answer should be in newtons (N), not joules (J). 12 N is the correct force.",
+        "correct": "no",
+        "correction": "12 N",
+        "why": "Joules measure energy, not force. Force is in newtons (N).",
+        "hint": "Check units: Force = mass × acceleration (kg·m/s² = N).",
+        "practice": "Use F = m × a. Units must be consistent (kg, m/s²).",
+        "category": "Units",
+        "verdict": "incorrect",
+        "affected_step": "substitution",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Magnitude correct; force unit must be N.",
+      "schema_valid": true
+    },
+    {
+      "id": "misconception",
+      "latency_seconds": 4.16,
+      "feedback": {
+        "samjho": "Force and Laws of Motion",
+        "answer_likho": "No, action and reaction forces act on different objects. They do not cancel as they act on separate bodies. Acceleration depends on net force on a single object.",
+        "correct": "No",
+        "correction": "Action and reaction forces act on different objects, so they don't cancel on the same object.",
+        "why": "Action-reaction pairs act on different bodies (Newton's 3rd law). Net force on a single object determines acceleration (Newton's 2nd law).",
+        "hint": "Recall Newton's 3rd law: forces come in pairs acting on different objects.",
+        "practice": "No",
+        "category": "Concept",
+        "verdict": "incorrect",
+        "affected_step": "conceptual understanding",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Incorrect. They act on different objects.",
+      "schema_valid": true
+    },
+    {
+      "id": "multistep",
+      "latency_seconds": 5.48,
+      "feedback": {
+        "samjho": "Force and Laws of Motion",
+        "answer_likho": "The student calculated acceleration correctly as 2 m/s² but applied mass incorrectly. The mass is 2 kg, so F = m*a = 2*2 = 4 N. Wait, that's correct? Let me check again.",
+        "correct": "Yes",
+        "correction": "None needed",
+        "why": "Acceleration calculation is correct: a = (v_final - v_initial)/time = (7-1)/3 = 2 m/s². Force calculation F = m*a = 2 kg * 2 m/s² = . Wait, the student wrote F = 2*2 = 4 N, which is correct. But the mass is 2 kg, so it's 2*2=4 N. The student did it right.",
+        "hint": "Double-check the mass value and units in force calculation.",
+        "practice": "Practice with different mass and velocity changes to reinforce the concept.",
+        "category": "Concept",
+        "verdict": "correct",
+        "affected_step": "None",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Correct.",
+      "schema_valid": true
+    },
+    {
+      "id": "hindi",
+      "latency_seconds": 9.57,
+      "feedback": {
+        "samjho": "जड़त्व (Inertia) एक भौतिक गुण है जो वस्तु को अपनी वर्तमान गतियों से दूर नहीं करने के लिए अपनी अवस्था को बनाए रखने की क्षमता को कहता है। यह वस्तु के द्रव्यमान से संबंधित है।\n\nउदाहरण: एक कार को रुकाने के लिए आपको अपने शरीर को आगे धकेलना पड़ता है, क्योंकि आपका शरीर जड़त्व के कारण अपनी गति को बनाए रखता है।",
+        "answer_likho": "Inertia is the property of an object to resist changes in its state of motion. It depends on mass.\n\nExample: When a car stops suddenly, your body tends to move forward due to inertia.",
+        "correct": "Yes",
+        "correction": "",
+        "why": "The student provided an empty answer, so no correction needed. The explanation given is correct for the concept of inertia.",
+        "hint": "",
+        "practice": "A car moving at 50 km/h suddenly stops. What happens to a passenger in the front seat? (Hint: Inertia)",
+        "category": "Formula",
+        "verdict": "unassessed",
+        "affected_step": "",
+        "source_ids": []
+      },
+      "expected_for_human_review": "Hindi explanation of resistance to change of rest/uniform motion.",
+      "schema_valid": true
+    },
+    {
+      "id": "hinglish",
+      "latency_seconds": 7.15,
+      "feedback": {
+        "samjho": "Action reaction equal hain, lekin direction vaise hoti hai ki unka net force zero hota hai. Isliye, koi motion nahi hota. Jaise, jab aap ek chikni ko chhodte hain, chikni aapko chhodta hai, lekin net force zero hai, isliye aapki motion nahi hoti.",
+        "answer_likho": "Action and reaction forces are equal in magnitude but opposite in direction, so net force is zero. Hence, no motion occurs. Example: When you push a wall, the wall pushes back with equal force, but since net force is zero, you don't move.",
+        "correct": "No",
+        "correction": "The student didn: t provide an answer, so no correction needed.",
+        "why": "Student didn't submit an answer, so no correction or verdict.",
+        "hint": "Recall Newton's third law: action-reaction pairs have equal magnitude but opposite direction, leading to zero net force for the system.",
+        "practice": "If you push a wall with 10 N force, what is the reaction force from the wall? (Answer: 10 N in opposite direction)",
+        "category": "Formula",
+        "verdict": "unassessed",
+        "affected_step": "",
+        "source_ids": []
+      },
+      "expected_for_human_review": "They act on different objects, so do not cancel on one body.",
+      "schema_valid": true
+    },
+    {
+      "id": "scope",
+      "latency_seconds": 4.98,
+      "feedback": {
+        "samjho": "The question asks about organic esterification, but this topic is outside the scope of Force and Laws of Motion (Class 9).",
+        "answer_likho": "This topic is outside the supported chapter. Please ask a Force and Laws of Motion question instead.",
+        "correct": "no",
+        "correction": "",
+        "why": "Organic esterification is a chemistry topic, not physics. Force and Laws of Motion covers Newton's laws, friction, momentum, etc. No relevant content here.",
+        "hint": "For Force and Laws of Motion: What is Newton's second law? How does friction affect motion?",
+        "practice": "If you have a question about forces, try: 'A 5 kg block slides on a rough surface with friction coefficient 0.2. Find the frictional force.'",
+        "category": "Concept",
+        "verdict": "unassessed",
+        "affected_step": "",
+        "source_ids": []
+      },
+      "expected_for_human_review": "State limited scope and invite Force and Laws of Motion question.",
+      "schema_valid": true
+    }
+  ]
+}

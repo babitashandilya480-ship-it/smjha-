@@ -1,0 +1,111 @@
+{
+  "scope": "P1 real local model smoke, synthetic inputs only",
+  "cases": [
+    {
+      "prompt": "Write one short caption for a photo of a sunrise.",
+      "http_status": 200,
+      "terminal_event": {
+        "schema_version": 1,
+        "run_id": "8f719b22-cc16-4669-a348-c174547bbbce",
+        "seq": 258,
+        "type": "run.completed",
+        "timestamp": "2026-09-22T16:34:48.336828+00:00",
+        "data": {
+          "usage": {
+            "prompt_eval_count": 139,
+            "eval_count": 256,
+            "done_reason": "length"
+          },
+          "truncated": true
+        }
+      },
+      "messages": [
+        {
+          "id": "ab7ae398-e861-4905-99a3-f3019b06f501",
+          "conversation_id": "f6eb61db-947a-47a2-a0dd-8ffc82fd5d0b",
+          "run_id": "8f719b22-cc16-4669-a348-c174547bbbce",
+          "role": "user",
+          "content": "Write one short caption for a photo of a sunrise.",
+          "created_at": "2026-09-22T16:34:35.918907+00:00"
+        },
+        {
+          "id": "a8ae44db-9bc8-4410-9e35-265b67dd8024",
+          "conversation_id": "f6eb61db-947a-47a2-a0dd-8ffc82fd5d0b",
+          "run_id": "8f719b22-cc16-4669-a348-c174547bbbce",
+          "role": "assistant",
+          "content": "Okay, the user asked for a short caption for a sunrise photo. Let me think about what makes a good caption. It should be concise, evocative, and capture the essence of a sunrise without being too cliché.\n\nFirst, I'll consider the key elements of a sunrise: light, color, new day, hope, nature, transition. People often use sunrise captions to express hope or the start of something new. But I need to avoid overused phrases like \"New day, new hope\" or \"The sun rises.\" \n\nThe user wants it short, so maybe 5-10 words. Let me brainstorm some options. \"Morning light, fresh starts.\" Hmm, that's a bit generic. \"Sunrise: Where the day begins.\" Maybe too straightforward. \n\nWait, the user might be posting on social media, so the caption should be engaging and relatable. Maybe something poetic but simple. \"Dawn breaks, the world wakes up.\" But that's a bit long. \n\nAnother angle: the beauty of the moment. \"Golden light, new beginnings.\" That's good but maybe too common. Let me think of something unique. How about \"The sky paints the day with hope.\" But \"paints\" might be a bit odd",
+          "created_at": "2026-09-22T16:34:48.335826+00:00"
+        }
+      ],
+      "run": {
+        "id": "8f719b22-cc16-4669-a348-c174547bbbce",
+        "conversation_id": "f6eb61db-947a-47a2-a0dd-8ffc82fd5d0b",
+        "request_id": "808f0208-983e-4a8e-a7d0-86b6356d9a6d",
+        "request_hash": "092ea6f248d0d980cf1f04c8007a9f13761f53256359dc75dfc5c83cbec090a5",
+        "state": "completed",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "effort": "quick",
+        "created_at": "2026-09-22T16:34:35.918421+00:00"
+      },
+      "seconds": 12.74
+    },
+    {
+      "prompt": "Recursion ko Hinglish mein do chhote sentences mein samjhao.",
+      "http_status": 200,
+      "terminal_event": {
+        "schema_version": 1,
+        "run_id": "5ac263f0-16d7-4b56-b28c-d8011e7280f2",
+        "seq": 258,
+        "type": "run.completed",
+        "timestamp": "2026-09-22T16:34:54.912438+00:00",
+        "data": {
+          "usage": {
+            "prompt_eval_count": 145,
+            "eval_count": 256,
+            "done_reason": "length"
+          },
+          "truncated": true
+        }
+      },
+      "messages": [
+        {
+          "id": "c685e1fc-4602-4fa6-84ac-b7d2ef17ad37",
+          "conversation_id": "663f0b2a-3180-441c-a329-b475ab6a8260",
+          "run_id": "5ac263f0-16d7-4b56-b28c-d8011e7280f2",
+          "role": "user",
+          "content": "Recursion ko Hinglish mein do chhote sentences mein samjhao.",
+          "created_at": "2026-09-22T16:34:48.666611+00:00"
+        },
+        {
+          "id": "1026f26c-72a6-4503-9b07-1a9367a2dadf",
+          "conversation_id": "663f0b2a-3180-441c-a329-b475ab6a8260",
+          "run_id": "5ac263f0-16d7-4b56-b28c-d8011e7280f2",
+          "role": "assistant",
+          "content": "Okay, the user wants me to explain recursion in Hinglish in two short sentences. Let me think.\n\nFirst, I need to recall what recursion is. Recursion is when a function calls itself to solve a problem. Like a function that breaks down a problem into smaller, similar problems until it reaches a base case.\n\nNow, Hinglish means a mix of Hindi and English. So I should use some Hindi words mixed with English terms.\n\nLet me try to phrase it in two sentences.\n\nFirst sentence: Maybe start with \"Recursion ek function jo apne aap ko call karta hai...\" but in Hing as well. Wait, Hinglish uses Hindi words but English structure.\n\nWait, the user said \"Hinglish\", so maybe terms like \"function\" in English but some Hindi terms. For example, \"Recursion ek function hai jisme ek function apne aap ko call karta hai...\"\n\nBut need to be short. Let me think of two sentences.\n\nFirst sentence: Recursion ek function ka concept hai jisme ek function apne aap ko call karta hai aur problem ko chhota-chhota parts mein solve karta hai.\n\nSecond sentence: Iska base case hai jisse recursion stop ho jata hai",
+          "created_at": "2026-09-22T16:34:54.911658+00:00"
+        }
+      ],
+      "run": {
+        "id": "5ac263f0-16d7-4b56-b28c-d8011e7280f2",
+        "conversation_id": "663f0b2a-3180-441c-a329-b475ab6a8260",
+        "request_id": "f8ce18e6-ccf4-498d-8f53-a76debe4e33f",
+        "request_hash": "7bc604eb90e1deadfa3008108a3742375b8ab32b7db756f1cfc24eb0c086b719",
+        "state": "completed",
+        "model": "qwen3:4b",
+        "model_digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+        "effort": "quick",
+        "created_at": "2026-09-22T16:34:48.665395+00:00"
+      },
+      "seconds": 6.65
+    }
+  ],
+  "capability": {
+    "available": true,
+    "model": "qwen3:4b",
+    "digest": "359d7dd4bcdab3d86b87d73ac27966f4dbb9f5efdfcc75d34a8764a09474fae7",
+    "quantization": "Q4_K_M",
+    "routing": "local_only"
+  },
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "verified_at": "2026-09-22T11:29:47.312227+00:00",
+  "backend_tests_passed": 51,
+  "training_tests_passed": 8,
+  "browser_tests_passed": 4,
+  "frontend_build": "passed",
+  "archive_hashes_verified": 9,
+  "live_memory_prompt": {
+    "schema_valid": true,
+    "latency_seconds": 11.39,
+    "feedback": {
+      "samjho": "When a stationary bus starts moving, the passenger's body tends to remain at rest due to inertia. Inertia is the resistance of an object to change its state of motion. Since the bus begins moving forward, the passenger's body lags behind and falls backward relative to the bus. This happens because the passenger's lower body (in contact with the bus seat) moves with the bus, but the upper body continues to stay at rest due to inertia.",
+      "answer_likho": "The passenger falls backward due to inertia. When the bus starts moving, the lower body moves with the bus, but the upper body remains at rest due to inertia, causing a backward fall relative to the bus.",
+      "correct": "",
+      "correction": "",
+      "why": "",
+      "hint": "",
+      "practice": "Why does a standing passenger tend to fall backward when a stationary bus starts moving?",
+      "category": "Formula",
+      "verdict": "unassessed",
+      "affected_step": "",
+      "source_ids": []
+    }
+  },
+  "notice": "Synthetic direct inference; no student history was created. Schema validation is not proof of scientific accuracy or improved memory quality.",
+  "training_report": "artifacts/scratch-20260922-165110-715457/report.json"
+}

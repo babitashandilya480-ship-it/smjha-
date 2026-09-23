@@ -1,0 +1,63 @@
+{
+  "general_learning": {
+    "id": "bcf09f64-9f04-479d-9a1c-b78c0f2f5fbf",
+    "request": {
+      "request_id": "bcf09f64-9f04-479d-9a1c-b78c0f2f5fbf",
+      "conversation_id": "a358adc9-1919-4c81-a95e-b5fe303f58bd",
+      "task": "doubt",
+      "question": "Explain what a Python dictionary is, with one short example.",
+      "answer": "",
+      "rubric": "",
+      "language": "English",
+      "action": "",
+      "document_id": null
+    },
+    "feedback": {
+      "samjho": "A Python dictionary is a collection of key-value pairs. Each key is unique and used to access its associated value. For example, {'name': 'Sam', 'city': 'Delhi'} stores name and city. You can retrieve a value using the key, like dict['name'].",
+      "answer_likho": "A Python dictionary is a data structure that stores key-value pairs. Each key is unique and maps to a value. It is useful for organizing data where you need to look up values by a specific identifier.\n\nExample: {'name': 'Alice', 'age': 25} — here, 'name' maps to 'Alice' and 'age' maps to 25.\n\nFormula/usage: dict[key] retrieves the value for a given key.\n\nPractice: Create a dictionary with three items: 'color', 'shape', and 'size', and assign values to them.",
+      "correct": "",
+      "correction": "",
+      "why": "",
+      "hint": "",
+      "practice": "",
+      "category": "Concept",
+      "verdict": "unassessed",
+      "affected_step": "",
+      "source_ids": []
+    },
+    "sources": [],
+    "method": "local_model",
+    "latency_seconds": 9.09,
+    "created_at": "2026-09-23T09:03:01.800972+00:00"
+  },
+  "prompting_guide": {
+    "answer": "The five framework parts are:  \n1. ROLE  \n2. CAPABILITIES  \n3. OPERATING MODE  \n4. STANDARDS  \n5. OUTPUT FORMAT  \n\n[Cited from PDF p. 3: \"The framework below has five parts. Use all five every time.\"]",
+    "sources": [
+      {
+        "title": "Understanding LLMs & Building an Astra-Style Agent",
+        "pdf_page": 3,
+        "text": "3. The 'Indirect' Approach — Prompting for Astra-Level Behavior\nYou can't download Astra's weights, but you can put ANY capable model (GPT-6 Astra itself via ChatGPT\ncustom instructions, GPT-4/5-class via API, or Claude) into 'agent mode' with a strong system prompt. The\nframework below has five parts. Use all five every time.\nROLE — Define exactly what kind of agent it is and its scope of authority.\nCAPABILITIES — List the tools it should assume/use: web search, code execution, file/doc creation,\nbrowsing.\nOPERATING MODE — Tell it to plan silently, work in steps, and only report back with results — not narrate\nevery micro-action.\nSTANDARDS — Set quality bars: cite sources, verify code runs, ask only when truly blocked, prefer\nfinishing over asking.\nOUTPUT FORMAT — Specify exactly how you want results delivered (files, structured sections,\nsummaries).\n4. Paste-Ready System Prompt\nPaste this into ChatGPT's Custom Instructions (or as the system message via API). This configures any\ncapable model — including GPT-6 Astra — to behave as a general-purpose research/code/docs/browsing\nagent.\n You are an autonomous work agent, not a casual chatbot. Operate like this:\n \nROLE\n- You handle complete tasks end-to-end: research, coding, document creation, and web\nbrowsing.\n- Treat every request as a project with a clear deliverable, not a single Q&A turn.\n \nCAPABILITIES (use proactively, without asking permission first)\n- Web search/browsing for anything time-sensitive, factual, or unfamili"
+      },
+      {
+        "title": "Understanding LLMs & Building an Astra-Style Agent",
+        "pdf_page": 1,
+        "text": "Understanding LLMs & Building a GPT-6\n Astra-Style Agent\nA practical guide: how large language models work, what makes GPT-6 Astra 'agentic', and\na ready-to-use prompt framework to get Astra-level behavior for research, coding,\ndocuments, and browsing tasks.\nPrepared for: Ayush  |  Tech Masala\nTopic: LLM fundamentals + indirect prompt-based agent replication\n1. What Is an LLM, Briefly\nA Large Language Model (LLM) is a neural network trained on huge amounts of text to predict the next piece\nof text (token) given everything before it. Three things determine what a model can actually do for you in\npractice:\n●\nBase capability — how well it reasons, codes, and recalls facts (set by training).\n●\nContext window — how much text/files it can hold in memory at once (Astra: ~1.05M tokens).\n●\nTools it's connected to — web browsing, code execution, file creation, apps. This is what turns a\n'chatbot' into an 'agent'.\nThe key insight: a lot of what makes a model feel like 'Astra' isn't secret weights you can copy — it's the\ncombination of (a) a strong base model, (b) tool access, and (c) a system prompt that tells it exactly how to\nplan, use tools, and structure output. You can't recreate the base model, but you can recreate most of the\nbehavior pattern with (b) and (c) — that's the 'indirect' approach.\n2. What Makes GPT-6 Astra 'Agentic'\nOpenAI released GPT-6 Astra on September 3, 2026 as its flagship model for long, end-to-end professional\nwork rather than short back-and-forth chat. Its d"
+      },
+      {
+        "title": "Understanding LLMs & Building an Astra-Style Agent",
+        "pdf_page": 5,
+        "text": "5. Tuning It For Specific Jobs\nAdd ONE of these task blocks under the base prompt depending on what you need that session, instead of\nrewriting the whole thing each time.\nResearch task: \"Research [topic]. Search at least 5 independent sources, cross-check disputed claims, and\ndeliver a structured brief with sources listed.\"\nCoding task: \"Build [thing]. Write working code, test it mentally or by running it, and deliver the final files —\nnot just snippets — with a one-line summary of what changed.\"\nDocument task: \"Create a [doc type] on [topic]. Deliver it as a finished file, formatted and ready to use, not\na draft in chat.\"\nBrowsing/current-info task: \"Check current [thing] as of today's date. Do not answer from memory —\nverify with a live search first.\"\n6. Quick Reality Check\nThis framework gets you Astra-style behavior — autonomous, multi-step, tool-using, deliverable-focused. It\ndoes not give you Astra's actual underlying model quality (that depends on which model you run the prompt\non) or its native tool integrations (browsing/code execution have to be enabled on whichever platform you\nuse). For the closest match to real Astra behavior, run this prompt as custom instructions inside ChatGPT\nwith GPT-6 Astra selected in Work mode, where browsing and code execution are already built in."
+      }
+    ],
+    "metrics": {
+      "first_text_ms": 5442,
+      "total_ms": 6585,
+      "preparation_ms": 286,
+      "load_ms": 4112,
+      "prompt_ms": 754,
+      "tokens_per_second": 50.9
+    },
+    "state": "completed",
+    "document_count": 4
+  }
+}
