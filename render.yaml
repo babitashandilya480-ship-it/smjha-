@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: samjha-api
+    runtime: docker
+    plan: 0.5c-512mb
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    disk:
+      name: samjha-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: SAMJHA_DB
+        value: /var/data/samjha.sqlite3
+      - key: SAMJHA_PUBLIC_MODE
+        value: 'true'
+      - key: SAMJHA_CHAT_DB
+        value: /var/data/samjha-chat.sqlite3
+      - key: SAMJHA_PUBLIC_ORIGIN
+        sync: false
+      - key: SAMJHA_ALLOWED_HOSTS
+        sync: false
+      - key: CI_API_KEY
+        sync: false
+      - key: CI_MODEL
+        sync: false
+      - key: CI_ENABLED
+        value: 'true'
+      - key: CI_MAX_REQUESTS
+        sync: false
+      - key: TAVILY_API_KEY
+        sync: false

@@ -1,0 +1,13 @@
+**/.env*
+**/__pycache__/
+**/*.pyc
+.venv/
+data/
+models/
+artifacts/
+docs/
+third_party/
+frontend/
+**/node_modules/
+**/*.sqlite3*
+.git/
